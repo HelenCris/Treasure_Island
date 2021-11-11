@@ -22,9 +22,9 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-crossroad = input('You\'re at a crossroad. Where do you want to go? Type "left" or "right": ') 
-lake = input('You\'ve come to a lake. There is an island in the middle of the lake. \n Type "wait" to wait for a boat. Type "swim" to swim across.')
-doors = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?")
+crossroad = input('You\'re at a crossroad. Where do you want to go? Type "left" or "right": ') .lower()
+lake = input('You\'ve come to a lake. There is an island in the middle of the lake. \n Type "wait" to wait for a boat. Type "swim" to swim across. ').lower()
+doors = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? ").lower()
 
 if crossroad == "left": 
     print("You fell into a hole. Game Over.")
@@ -38,4 +38,3 @@ elif doors == "blue":
     print("You found the treasure! You Win!")
 else:
     print("You chose a door that doesn't exist. Game Over.")
-
